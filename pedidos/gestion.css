@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('FONDO.png');
+    background-size: cover;
+    background-position: center;
+    color: #2d1b12;
+}
+
+header {
+    background: linear-gradient(135deg, #f4c873, #e0a853);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #2d1b12;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a, nav ul li button {
+    color: #2d1b12;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.gestion {
+    max-width: 75rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+#filtro-estado, #filtro-pedido-id, #filtro-nombre-cliente, #mostrar-todos {
+    padding: 0.65rem;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #e0a853;
+    border-radius: 0.25rem;
+    background: #fff;
+    color: #2d1b12;
+}
+
+#filtro-pedido-id, #filtro-nombre-cliente {
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+#mostrar-todos {
+    background: linear-gradient(135deg, #f4c873, #e0a853);
+    border: none;
+    color: #2d1b12;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#mostrar-todos:hover {
+    background: linear-gradient(135deg, #e0a853, #b07b12);
+    transform: scale(1.05);
+}
+
+.order-item {
+    border-bottom: 1px solid #e0a853;
+    padding: 1rem 0;
+}
+
+.order-item h4 {
+    color: #f4c873;
+    margin: 0 0 0.5rem;
+}
+
+.order-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-item ul li {
+    margin: 0.25rem 0;
+}
+
+.order-item ul li::before {
+    content: "• ";
+    color: #f4c873;
+}
+
+.order-item button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease;
+}
+
+.order-item button:hover {
+    background: #218838;
+}
+
+#order-message {
+    background: #f4c873;
+    color: #2d1b12;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    margin-top: 1rem;
+}

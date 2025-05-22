@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Pedidos - Santo Domingo</title>
+    <link rel="stylesheet" href="./gestion.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gestión de Pedidos</h1>
+            <nav>
+                <ul>
+                    <li><a href="../frontend_menú/index.html">Volver al Menú</a></li>
+                    <li><button id="logout-btn">Cerrar Sesión</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gestion">
+        <h2>Pedidos</h2>
+        <div class="filters">
+            <select id="filtro-estado">
+                <option value="">Todos los Estados</option>
+                <option value="pendiente">Pendiente</option>
+                <option value="atendido">Atendido</option>
+            </select>
+            <input type="number" id="filtro-pedido-id" placeholder="Filtrar por ID de pedido" min="1">
+            <input type="text" id="filtro-nombre-cliente" placeholder="Filtrar por nombre de cliente">
+            <button id="mostrar-todos">Mostrar Todos</button>
+        </div>
+        <div id="orders-list"></div>
+        <div id="order-message" style="display: none;"></div>
+    </section>
+
+    <script src="./gestion.js"></script>
+</body>
+</html>
